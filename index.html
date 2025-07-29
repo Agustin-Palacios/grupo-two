@@ -3,47 +3,194 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Del mar joyas</title> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </head> 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Del mar joyas</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a> 
-          <link rel="stylesheet" href="">
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos en plata 925 
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Aros</a></li>
-            <li><a class="dropdown-item" href="#">Anillos</a></li> 
-            <li><a class="dropdown-item" href="#">Collares y cadenas</a></li>
-            <li><a class="dropdown-item" href="#">Pulseras</a></li> 
-            <li><a class="dropdown-item" href="#">Abridores</a></li> 
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Ver todo</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    <title>Del mar joyas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
   <body>
-  </body>
-</html>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Saved Pictures/IMG-20250723-WA0223.jpg" alt="" class="rounded-circle" width="200" height="200">
+        </a> 
+        <button 
+        class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="sobre-nosotras.html" onclick="mostrarcontenidoSobreNosotras ()">Sobre Nosotras</a>
+              </li> 
+              <li class="nav-item">
+              <a class="nav-link"  href="contacto.html" onclick="mostrarContacto ()">Contacto</a>
+              </li>
+              <script>
+                function mostrarcontenidoSobreNosotras() {
+                  var contenido = document.getElementById("contenido-sobre-nosotras");
+                  if (contenido.style.display === "none") {
+                    contenido.style.display = "block";
+                  } else {
+                    contenido.style.display = "none";
+                  }
+                }
+                function mostrarContacto() {
+                var contenido = document.getElementById("contenido-contacto");
+                if (contenido.style.display === "none") {
+                  contenido.style.display = "block";
+                } else {
+                  contenido.style.display = "none";
+                }
+              } 
+              </script>           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos en plata 925
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" id= "Aros" href="#">Aros</a>
+                 <div id="galeria" style="display: none;">
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0240.jpg" alt="Aro 1" style="width: 100px; height: 100px;">
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0241.jpg" alt="Aro 2" style="width: 100px;height: 100px;">
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0242.jpg" alt="Aro 3"style="width: 100px;height: 100px;"> 
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0243.jpg" alt="Aro 4"style="width: 100px;height: 100px;"> 
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0244.jpg" alt="Aro 5"style="width: 100px;height: 100px;"> 
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0245.jpg" alt="Aro 6"style="width: 100px;height: 100px;">
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0246.jpg" alt="Aro 7"style="width: 100px;height: 100px;">
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0247.jpg" alt="Aro 8"style="width: 100px;height: 100px;">
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0248.jpg" alt="Aro 9"style="width: 100px;height: 100px;">
+                 <img src="Saved Pictures/Aros/IMG-20250723-WA0249.jpg" alt="Aro 10"style="width: 100px;height: 100px;">
+                 </div>
+                </li>
+                <li><a class="dropdown-item" id="Collares y Cadenas" href="#">Collares y Cadenas</a></li> 
+                <div id="galeria2" style="display: none;">
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0224.jpg" alt="Collares y Cadenas 1" style="width: 100px; height: 100px;"> 
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0225.jpg" alt="Collares y Cadenas 2" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0226.jpg" alt="Collares y Cadenas 3" style="width: 100px; height: 100px;"> 
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0227.jpg" alt="Collares y Cadenas 4" style="width: 100px; height: 100px;"> 
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0228.jpg" alt="Collares y Cadenas 5" style="width: 100px; height: 100px;"> 
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0229.jpg" alt="Collares y Cadenas 6" style="width: 100px; height: 100px;"> 
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0230.jpg" alt="Collares y Cadenas 7" style="width: 100px; height: 100px;"> 
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0231.jpg" alt="Collares y Cadenas 8" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0232.jpg" alt="Collares y Cadenas 9" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Collares/IMG-20250723-WA0233.jpg" alt="Collares y Cadenas 10" style="width: 100px; height: 100px;"> 
+                 </div>
+                <li><a class="dropdown-item" id="Abridores" href="#">Abridores</a></li> 
+                <div id= "galeria3" style="display: none;" href="#"> 
+                  <img src="Saved Pictures/Abridores/IMG-20250723-WA0251.jpg" alt="Abridor 1" style="width: 100px; height: 100px;"> 
+                  <img src="Saved Pictures/Abridores/IMG-20250723-WA0252.jpg" alt="Abridor 2" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Abridores/IMG-20250723-WA0253.jpg" alt="Abridor 3" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Abridores/IMG-20250723-WA0254.jpg" alt="Abridor 4" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Abridores/IMG-20250723-WA0255.jpg" alt="Abridor 5" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Abridores/IMG-20250723-WA0256.jpg" alt="Abridor 6" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Abridores/IMG-20250723-WA0257.jpg" alt="Abridor 7" style="width: 100px; height: 100px;">
+                </div>
+                <li><a class="dropdown-item"id="Pulseras" href="#">Pulseras</a></li>
+                <div id="galeria4" style="display: none;">
+                  <img src="Saved Pictures/Pulseras/IMG-20250723-WA0234.jpg" alt="Pulsera 1" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Pulseras/IMG-20250723-WA0235.jpg" alt="Pulsera 2" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Pulseras/IMG-20250723-WA0236.jpg" alt="Pulsera 3" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Pulseras/IMG-20250723-WA0237.jpg" alt="Pulsera 4" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Pulseras/IMG-20250723-WA0238.jpg" alt="Pulsera 5" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Pulseras/IMG-20250723-WA0239.jpg" alt="Pulsera 6" style="width: 100px; height: 100px;">
+                </div>
+                <li><a class="dropdown-item" id="Anillos"href="#">Anillos</a></li>
+                <div id="galeria5" style="display: none;">
+                  <img src="Saved Pictures/Anillos/IMG-20250723-WA0259.jpg" alt="Anillo 1" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Anillos/IMG-20250723-WA0260.jpg" alt="Anillo 2" style="width: 100px; height: 100px;">
+                  <img src="Saved Pictures/Anillos/IMG-20250723-WA0261.jpg" alt="Anillo 3" style="width: 100px; height: 100px;">
+                </div>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="galeria"></div> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script> 
+  </body> 
+  <script>
+    document.getElementById("Aros").addEventListener("click", () => {
+      const galeria = document.getElementById("galeria");
+      if (galeria.style.display === "none") {
+        galeria.style.display = "flex";
+        galeria.style.flexWrap = "wrap";
+      } else {
+        galeria.style.display = "none";
+      }
+    });
+  </script> 
+  <script>
+    document.getElementById("Collares y Cadenas").addEventListener("click", () => {
+      const galeria2 = document.getElementById("galeria2");
+      if (galeria2.style.display === "none") {
+        galeria2.style.display = "flex";
+        galeria2.style.flexWrap = "wrap";
+      } else {
+        galeria2.style.display = "none";
+      }
+    });
+  </script> 
+  <script>
+    document.getElementById("Abridores").addEventListener("click", () => {
+      const galeria3 = document.getElementById("galeria3");
+      if (galeria3.style.display === "none") {
+        galeria3.style.display = "flex";
+        galeria3.style.flexWrap = "wrap";
+      } else {
+        galeria3.style.display = "none";
+      }
+    });
+  </script> 
+   <script>
+    document.getElementById("Pulseras").addEventListener("click", () => {
+      const galeria4= document.getElementById("galeria4");
+      if (galeria4.style.display === "none") {
+        galeria4.style.display = "flex";
+        galeria4.style.flexWrap = "wrap";
+      } else {
+        galeria4.style.display = "none";
+      }
+    });
+  </script>
+  <script>
+    document.getElementById("Anillos").addEventListener("click", () => {
+      const galeria5 = document.getElementById("galeria5");
+      if (galeria5.style.display === "none") {
+        galeria5.style.display = "flex";
+        galeria5.style.flexWrap = "wrap";
+      } else {
+        galeria5.style.display = "none";
+      }
+    });
+  </script>
+</html> 
