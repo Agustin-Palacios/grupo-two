@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand" id="home-link">
+                <img src="assets/images/IMG-20250723-WA0223.jpg" alt="Del Mar Joyas" class="logo" id="logo-img">
+                <span>Del Mar Joyas</span>
+            </a>
+            
+            <button class="navbar-toggle" id="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <div class="navbar-menu" id="navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" id="inicio-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/acerca-de/index.html" class="nav-link" id="acerca-link">Sobre Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/contacto/index.html" class="nav-link" id="contacto-link">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="productos-dropdown">
+                            Productos en plata 925
+                        </a>
+                        <ul class="dropdown-menu" id="dropdown-menu">
+                            <li><a href="pages/categorias/aros/index.html" class="dropdown-item" id="aros-link">Aros</a></li>
+                            <li><a href="pages/categorias/collares-y-cadenas/index.html" class="dropdown-item" id="collares-link">Collares y Cadenas</a></li>
+                            <li><a href="pages/categorias/abridores/index.html" class="dropdown-item" id="abridores-link">Abridores</a></li>
+                            <li><a href="pages/categorias/pulseras/index.html" class="dropdown-item" id="pulseras-link">Pulseras</a></li>
+                            <li><a href="pages/categorias/anillos/index.html" class="dropdown-item" id="anillos-link">Anillos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="search-container">
+                    <input type="search" class="search-input" placeholder="Buscar productos..." id="search-input">
+                    <button class="search-button" type="button" id="search-button">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <script>
+        // Función para ajustar rutas según la profundidad de la página
+        function adjustNavbarPaths() {
+            const currentPath = window.location.pathname;
+            const pathDepth = currentPath.split('/').length - 2; // Calcula la profundidad
+            
+            let prefix = '';
+            for (let i = 0; i < pathDepth; i++) {
+                if (currentPath.includes('/pages/') || currentPath.includes('/categorias/')) {
+                    prefix += '../';
+                }
+            }
+            
+            // Ajustar rutas de los enlaces
+            const homeLink = document.getElementById('home-link');
+            const logoImg = document.getElementById('logo-img');
+            const inicioLink = document.getElementById('inicio-link');
+            const acercaLink = document.getElementById('acerca-link');
+            const contactoLink = document.getElementById('contacto-link');
+            const arosLink = document.getElementById('aros-link');
+            const collaresLink = document.getElementById('collares-link');
+            const abridoresLink = document.getElementById('abridores-link');
+            const pulserasLink = document.getElementById('pulseras-link');
+            const anillosLink = document.getElementById('anillos-link');
+            
+            if (homeLink) homeLink.href = prefix + 'index.html';
+            if (logoImg) logoImg.src = prefix + 'assets/images/IMG-20250723-WA0223.jpg';
+            if (inicioLink) inicioLink.href = prefix + 'index.html';
+            if (acercaLink) acercaLink.href = prefix + 'pages/acerca-de/index.html';
+            if (contactoLink) contactoLink.href = prefix + 'pages/contacto/index.html';
+            if (arosLink) arosLink.href = prefix + 'pages/categorias/aros/index.html';
+            if (collaresLink) collaresLink.href = prefix + 'pages/categorias/collares-y-cadenas/index.html';
+            if (abridoresLink) abridoresLink.href = prefix + 'pages/categorias/abridores/index.html';
+            if (pulserasLink) pulserasLink.href = prefix + 'pages/categorias/pulseras/index.html';
+            if (anillosLink) anillosLink.href = prefix + 'pages/categorias/anillos/index.html';
+        }
+        
+        // Ejecutar cuando se carga el navbar
+        adjustNavbarPaths();
+    </script>
+</body>
+</html>

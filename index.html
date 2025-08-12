@@ -1,172 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Del mar joyas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Del Mar Joyas - Productos en Plata 925</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/IMG-20250723-WA0223.jpg" alt="" class="rounded-circle" width="100" height="100">
-        </a> 
-        <button 
-        class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon"></span>
-        </button> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a> 
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="sobre-nosotras.html" onclick="mostrarcontenidoSobreNosotras ()">Sobre Nosotras</a>
-              </li> 
-              <li class="nav-item">
-              <a class="nav-link"  href="contacto.html" onclick="mostrarContacto ()">Contacto</a>
-              </li>
-              <script>
-                function mostrarcontenidoSobreNosotras() {
-                  var contenido = document.getElementById("contenido-sobre-nosotras");
-                  if (contenido.style.display === "none") {
-                    contenido.style.display = "block";
-                  } else {
-                    contenido.style.display = "none";
-                  }
-                }
-                function mostrarContacto() {
-                var contenido = document.getElementById("contenido-contacto");
-                if (contenido.style.display === "none") {
-                  contenido.style.display = "block";
-                } else {
-                  contenido.style.display = "none";
-                }
-              } 
-              </script>           
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Productos en plata 925
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" data-categoria="Aros">Aros</a></li>
-                <li><a class="dropdown-item" href="#" data-categoria="Collares-y-Cadenas">Collares y Cadenas</a></li> 
-                <li><a class="dropdown-item" href="#" data-categoria="Abridores">Abridores</a></li> 
-                <li><a class="dropdown-item" href="#" data-categoria="Pulseras">Pulseras</a></li>
-                <li><a class="dropdown-item" href="#" data-categoria="Anillos">Anillos</a></li> 
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Buscar
-            </button>
-          </form>
+    <!-- Incluir navbar como componente -->
+    <div id="navbar-container"></div>  
+    
+    <main class="main-content">
+      <section class="hero">
+        <h1>Bienvenidos a Del Mar Joyas</h1>
+        <p>Descubre nuestra exclusiva colección de joyas en plata 925</p>
+      </section>
+      
+      <section class="categories-preview">
+        <h2>Nuestras Categorías</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <a href="pages/categorias/aros/index.html">
+              <img src="assets/images/Aros/IMG-20250723-WA0240.jpg" alt="Aros">
+              <h3>Aros</h3>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="pages/categorias/collares-y-cadenas/index.html">
+              <img src="assets/images/Collares/IMG-20250723-WA0224.jpg" alt="Collares">
+              <h3>Collares y Cadenas</h3>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="pages/categorias/abridores/index.html">
+              <img src="assets/images/Abridores/IMG-20250723-WA0251.jpg" alt="Abridores">
+              <h3>Abridores</h3>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="pages/categorias/pulseras/index.html">
+              <img src="assets/images/Pulseras/IMG-20250723-WA0234.jpg" alt="Pulseras">
+              <h3>Pulseras</h3>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="pages/categorias/anillos/index.html">
+              <img src="assets/images/Anillos/IMG-20250723-WA0259.jpg" alt="Anillos">
+              <h3>Anillos</h3>
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>  
-    <div class="categorias">
-      <div id="Aros"class="categoria">
-        <h2>Aros</h2>
-         <img src="assets/images/Aros/IMG-20250723-WA0240.jpg" alt="Aro 1" style="width: 100px; height: 100px;">
-        <img src="assets/images/Aros/IMG-20250723-WA0241.jpg" alt="Aro 2" style="width: 100px;height: 100px;">
-        <img src="assets/images/Aros/IMG-20250723-WA0242.jpg" alt="Aro 3"style="width: 100px;height: 100px;"> 
-        <img src="assets/images/Aros/IMG-20250723-WA0243.jpg" alt="Aro 4"style="width: 100px;height: 100px;"> 
-        <img src="assets/images/Aros/IMG-20250723-WA0244.jpg" alt="Aro 5"style="width: 100px;height: 100px;"> 
-        <img src="assets/images/Aros/IMG-20250723-WA0245.jpg" alt="Aro 6"style="width: 100px;height: 100px;">
-        <img src="assets/images/Aros/IMG-20250723-WA0246.jpg" alt="Aro 7"style="width: 100px;height: 100px;">
-        <img src="assets/images/Aros/IMG-20250723-WA0247.jpg" alt="Aro 8"style="width: 100px;height: 100px;">
-        <img src="assets/images/Aros/IMG-20250723-WA0248.jpg" alt="Aro 9"style="width: 100px;height: 100px;">
-        <img src="assets/images/Aros/IMG-20250723-WA0249.jpg" alt="Aro 10"style="width: 100px;height: 100px;">
-     </div> 
-      <div id="Collares-y-Cadenas" class="categoria">
-        <h2>Collares y Cadenas</h2>
-        <img src="assets/images/Collares/IMG-20250723-WA0224.jpg" alt="Collares y Cadenas 1" style="width: 100px; height: 100px;"> 
-        <img src="assets/images/Collares/IMG-20250723-WA0225.jpg" alt="Collares y Cadenas 2" style="width: 100px; height: 100px;">
-        <img src="assets/images/Collares/IMG-20250723-WA0226.jpg" alt="Collares y Cadenas 3" style="width: 100px; height: 100px;"> 
-        <img src="assets/images/Collares/IMG-20250723-WA0227.jpg" alt="Collares y Cadenas 4" style="width: 100px; height: 100px;"> 
-        <img src="assets/images/Collares/IMG-20250723-WA0228.jpg" alt="Collares y Cadenas 5" style="width: 100px; height: 100px;"> 
-        <img src="assets/images/Collares/IMG-20250723-WA0229.jpg" alt="Collares y Cadenas 6" style="width: 100px; height: 100px;"> 
-        <img src="assets/images/Collares/IMG-20250723-WA0230.jpg" alt="Collares y Cadenas 7" style="width: 100px; height: 100px;"> 
-        <img src="assets/images/Collares/IMG-20250723-WA0231.jpg" alt="Collares y Cadenas 8" style="width: 100px; height: 100px;">
-        <img src="assets/images/Collares/IMG-20250723-WA0232.jpg" alt="Collares y Cadenas 9" style="width: 100px; height: 100px;">
-        <img src="assets/images/Collares/IMG-20250723-WA0233.jpg" alt="Collares y Cadenas 10" style="width: 100px; height: 100px;"> 
-      </div> 
-      <div id="Abridores" class="categoria">
-        <h2>Abridores</h2>
-        <img src="assets/images/Abridores/IMG-20250723-WA0251.jpg" alt="Abridor 1" style="width: 100px; height: 100px;"> 
-        <img src="assets/images/Abridores/IMG-20250723-WA0252.jpg" alt="Abridor 2" style="width: 100px; height: 100px;">
-        <img src="assets/images/Abridores/IMG-20250723-WA0253.jpg" alt="Abridor 3" style="width: 100px; height: 100px;">
-        <img src="assets/images/Abridores/IMG-20250723-WA0254.jpg" alt="Abridor 4" style="width: 100px; height: 100px;">
-        <img src="assets/images/Abridores/IMG-20250723-WA0255.jpg" alt="Abridor 5" style="width: 100px; height: 100px;">
-        <img src="assets/images/Abridores/IMG-20250723-WA0256.jpg" alt="Abridor 6" style="width: 100px; height: 100px;">
-        <img src="assets/images/Abridores/IMG-20250723-WA0257.jpg" alt="Abridor 7" style="width: 100px; height: 100px;"> 
-      </div>
-      <div id="Pulseras" class="categoria"> 
-        <h2>Pulseras</h2>
-        <img src="assets/images/Pulseras/IMG-20250723-WA0234.jpg" alt="Pulsera 1" style="width: 100px; height: 100px;">
-        <img src="assets/images/Pulseras/IMG-20250723-WA0235.jpg" alt="Pulsera 2" style="width: 100px; height: 100px;">
-        <img src="assets/images/Pulseras/IMG-20250723-WA0236.jpg" alt="Pulsera 3" style="width: 100px; height: 100px;">
-        <img src="assets/images/Pulseras/IMG-20250723-WA0237.jpg" alt="Pulsera 4" style="width: 100px; height: 100px;">
-        <img src="assets/images/Pulseras/IMG-20250723-WA0238.jpg" alt="Pulsera 5" style="width: 100px; height: 100px;">
-        <img src="assets/images/Pulseras/IMG-20250723-WA0239.jpg" alt="Pulsera 6" style="width: 100px; height: 100px;">
-      </div>
-      <div id="Anillos" class="categoria">
-        <h2>Anillos</h2>
-        <img src="assets/images/Anillos/IMG-20250723-WA0259.jpg" alt="Anillo 1" style="width: 100px; height: 100px;">
-        <img src="assets/images/Anillos/IMG-20250723-WA0260.jpg" alt="Anillo 2" style="width: 100px; height: 100px;">
-        <img src="assets/images/Anillos/IMG-20250723-WA0261.jpg" alt="Anillo 3" style="width: 100px; height: 100px;"> 
-      </div>
-    </div>
-    <script> 
-      const botones = document.querySelectorAll('.dropdown-item');
-      const categorias = document.querySelectorAll('.categoria');
-      categorias.forEach((categoria) => {
-      categoria.style.display = 'none';
-      });
-
-      botones.forEach((boton) => {
-       boton.addEventListener('click', (e) => {
-       e.preventDefault();
-       const categoriaId = boton.getAttribute('data-categoria');
-       categorias.forEach((categoria) => {
-        categoria.style.display = 'none';
-     });
-     const categoriaSeleccionada = document.getElementById(categoriaId);
-     if (categoriaSeleccionada) {
-      categoriaSeleccionada.style.display = 'block';
-      } else {
-        const categoriaSelencionadaSinGuion = document.getElementById(boton.textContent.trim());
-        if (categoriaSelencionadaSinGuion) {
-          categoriaSelencionadaSinGuion.style.display = 'block';
-        }
-     }
-     });
-     }); 
-   </script>
-   <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script> 
-</body> 
+      </section>
+    </main>
+    
+    <script>
+      fetch('components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error cargando navbar:', error));
+    </script>
+  </body> 
 </html> 
