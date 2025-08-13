@@ -1,4 +1,3 @@
-/* Estilos base para páginas de categorías */
 .category-page {
     max-width: 1200px;
     margin: 0 auto;
@@ -132,7 +131,7 @@
     margin: 0 5px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .category-page {
         padding: 20px 15px;

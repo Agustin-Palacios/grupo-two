@@ -172,7 +172,7 @@
     transform: translateY(-1px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar-toggle {
         display: flex;

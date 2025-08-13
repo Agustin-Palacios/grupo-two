@@ -6,26 +6,7 @@
     <title>Categorías - Del Mar Joyas</title>
     <link rel="stylesheet" href="../../styles/navbar.css">
     <link rel="stylesheet" href="../../style.css">
-    <style>
-        .categories-main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .categories-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: #2c3e50;
-        }
-        
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="navbar-container"></div>
@@ -68,7 +49,6 @@
     </main>
     
     <script>
-        // Cargar navbar como componente
         fetch('../../components/navbar.html')
             .then(response => response.text())
             .then(data => {
