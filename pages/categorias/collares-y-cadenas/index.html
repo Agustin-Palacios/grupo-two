@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collares y Cadenas - Del Mar Joyas</title>
+    <link rel="stylesheet" href="../../../styles/navbar.css">
+    <link rel="stylesheet" href="../../../styles/category-base.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <main class="category-page">
+       
+        
+        <header class="category-header">
+            <h1 class="category-title">Collares y Cadenas en Plata 925</h1>
+            <p class="category-description">Encuentra el collar perfecto en nuestra exclusiva colección de plata 925</p>
+        </header>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0224.jpg" alt="Collar Elegante" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Collar Elegante</h3>
+                    <p class="product-description">Collar refinado en plata 925 con acabado brillante</p>
+                    <div class="product-price">$85.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0225.jpg" alt="Cadena Clásica" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Cadena Clásica</h3>
+                    <p class="product-description">Cadena tradicional de plata 925 de alta calidad</p>
+                    <div class="product-price">$65.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0226.jpg" alt="Collar Moderno" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Collar Moderno</h3>
+                    <p class="product-description">Diseño contemporáneo para el día a día</p>
+                    <div class="product-price">$75.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0227.jpg" alt="Collar Vintage" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Collar Vintage</h3>
+                    <p class="product-description">Estilo vintage con detalles únicos</p>
+                    <div class="product-price">$90.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0228.jpg" alt="Cadena Delicada" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Cadena Delicada</h3>
+                    <p class="product-description">Diseño sutil y elegante</p>
+                    <div class="product-price">$58.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0229.jpg" alt="Collar Exclusivo" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Collar Exclusivo</h3>
+                    <p class="product-description">Pieza exclusiva de nuestra colección</p>
+                    <div class="product-price">$120.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0230.jpg" alt="Cadena Artesanal" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Cadena Artesanal</h3>
+                    <p class="product-description">Trabajo artesanal de máxima calidad</p>
+                    <div class="product-price">$95.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0231.jpg" alt="Collar Sofisticado" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Collar Sofisticado</h3>
+                    <p class="product-description">Elegancia y sofisticación en cada detalle</p>
+                    <div class="product-price">$110.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0232.jpg" alt="Cadena Especial" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Cadena Especial</h3>
+                    <p class="product-description">Para ocasiones especiales</p>
+                    <div class="product-price">$88.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Collares/IMG-20250723-WA0233.jpg" alt="Collar Único" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Collar Único</h3>
+                    <p class="product-description">Diseño único e irrepetible</p>
+                    <div class="product-price">$130.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        fetch('../../../components/navbar-categories.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando navbar:', error));
+    </script>
+</body>
+</html>
